@@ -9,11 +9,11 @@ on:
       branch:
         description: 'Branch to deploy'
         required: true
-        default: 'Dev'
+        default: 'Test'
       app_list:
         description: 'Comma separated list of apps to deploy'
         required: true
-        default: 'App1,App2'
+        default: 'App2'
 
 jobs:
   Deploy_Apps:
@@ -22,3 +22,4 @@ jobs:
     - run: |
         echo "Running deployment of branch ${{ github.event.inputs.branch }}!"
         echo "- Deploying the following Apps: ${{ github.event.inputs.app_list }}!"
+        echo "Im king of the world! All hail the king!"
