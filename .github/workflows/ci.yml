@@ -85,7 +85,7 @@ jobs:
       # Download the artifact from GitHub Artifacts #
       ###############################################
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: myimage
           path: /tmp
