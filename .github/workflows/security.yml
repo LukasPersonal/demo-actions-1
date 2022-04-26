@@ -47,7 +47,7 @@ jobs:
       # Initialize CodeQL #
       #####################
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v1
+        uses: github/codeql-action/init@v2
         with:
           languages: python
 
@@ -64,4 +64,4 @@ jobs:
       #######################
       - name: Perform CodeQL Analysis
         if: steps.wait-for-build-success.outputs.conclusion == 'success'
-        uses: github/codeql-action/analyze@v1
+        uses: github/codeql-action/analyze@v2
