@@ -42,3 +42,5 @@ jobs:
 
   test:
     uses: LukasPersonal/centralized-workflow/.github/workflows/test.yml@main
+    with:
+      VAR: "123"
